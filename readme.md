@@ -2,10 +2,15 @@
 ## How to Read Source and Fuzzing
 
   1-4 章主要是一些阅读源码和Fuzzing 编写经验,章节里面结合了大量真实的例子,包括阅读源码和Fuzzer 编写的例子
+
   5-6 章主要介绍程序分析的原理
+
   8-10 章更进一步深入符号执行的工具
+
   附录1 主要介绍使用工具进行Fuzzing
+
   附录2 主要介绍从零开始如何编写Fuzzer
+
   附录3 主要介绍从零开始编写一个符号执行工具
 
   [1.Github](1.Github.md)
@@ -30,7 +35,7 @@
 
   -- 附录 --
 
-  P1.Fuzzing ImageMagick
+  [P1.Fuzzing ImageMagick](https://github.com/lcatro/Fuzzing-ImageMagick/blob/master/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Fuzzing%E6%8C%96%E6%8E%98ImageMagick%E7%9A%84%E6%BC%8F%E6%B4%9E.md)
 
   P2.WASM Fuzzer 编写实例  --  正在更新
 

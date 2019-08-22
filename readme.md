@@ -39,4 +39,6 @@
 
   P2.WASM Fuzzer 编写实例  --  正在更新
 
-  P3.符号执行与智能合约审计  --  正在更新
+  [P3.符号执行与智能合约审计 for KCON & TenSec](P3 Ethereum 智能合约自动化审计议题投稿.pptx)
+
+  [P4.REX 框架与Auto Exploit Generation 符号执行原理](P4 REX 框架与Auto Exploit Generation 符号执行原理.md)

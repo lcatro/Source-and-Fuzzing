@@ -1,0 +1,41 @@
+
+
+## 1.clang-11 Compile Error in Make
+
+fuzzing@fuzzing-virtual-machine:~/Desktop/vm_qemu/qemu_fuzzer/instrument$ make && ./fuzzer ./example3
+clang-sp -g -fsanitize-coverage=trace-pc-guard sanitize_converage.c -c -v
+clang version 11.0.1
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/8
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
+Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/8
+Selected GCC installation: /usr/bin/../lib/gcc/x86_64-linux-gnu/10
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+ (in-process)
+ "/usr/bin/clang-sp" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name sanitize_converage.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -fno-split-dwarf-inlining -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -resource-dir /usr/lib/clang/11.0.1 -internal-isystem /usr/local/include -internal-isystem /usr/lib/clang/11.0.1/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/fuzzing/Desktop/vm_qemu/qemu_fuzzer/instrument -ferror-limit 19 -fsanitize-coverage-type=3 -fsanitize-coverage-trace-pc-guard -fgnuc-version=4.2.1 -fcolor-diagnostics -faddrsig -o sanitize_converage.o -x c sanitize_converage.c
+clang -cc1 version 11.0.1 based upon LLVM 11.0.1 default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/usr/lib/clang/11.0.1/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+In file included from sanitize_converage.c:4:
+In file included from /usr/include/memory.h:29:
+/usr/include/string.h:33:10: fatal error: 'stddef.h' file not found
+#include <stddef.h>
+         ^~~~~~~~~~
+1 error generated.
+make: *** [Makefile:7: all] Error 1
+
+Fix:
+sudo ln -s your_llvm_lib_path  /usr/lib/clang/11.0.1
+sudo ln -s /usr/lib/llvm-11/lib/clang/11.0.0  /usr/lib/clang/11.0.1
+
+

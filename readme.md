@@ -33,6 +33,8 @@
 
   10.Driller:Fuzzing 和符号执行的结合  --  正在更新
 
+  [12.深入解析libfuzzer与asan.md](12.%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90libfuzzer%E4%B8%8Easan.md)
+
   -- 附录 --
 
   [P1.Fuzzing ImageMagick](https://github.com/lcatro/Fuzzing-ImageMagick/blob/master/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Fuzzing%E6%8C%96%E6%8E%98ImageMagick%E7%9A%84%E6%BC%8F%E6%B4%9E.md)
@@ -42,3 +44,18 @@
   [P3.符号执行与智能合约审计 for KCON & TenSec](P3%20Ethereum%20智能合约自动化审计议题投稿.pptx)
 
   [P4.REX 框架与Auto Exploit Generation 符号执行原理](P4%20REX%20框架与Auto%20Exploit%20Generation%20符号执行原理.md)
+
+  P5.脑图挖洞案例,快速且低成本地从零开始弄懂ThinkPHP框架    ==>  Think代码分析.emmx (使用MindMaster打开,值得一读)
+
+  脑图预览:
+
+![](.\picp5\P5.Pic1.png)
+
+
+
+  -- 快速上手挖洞思路概述 --
+
+![](.\漏洞挖掘思路.png)
+
+
+

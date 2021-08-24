@@ -35,6 +35,8 @@
 
   [12.深入解析libfuzzer与asan.md](12.%E6%B7%B1%E5%85%A5%E8%A7%A3%E6%9E%90libfuzzer%E4%B8%8Easan.md)
 
+  13.逻辑漏洞自动化实践,检验逻辑漏洞主要思路是判断状态是否在预期之内(对于不同类型的漏洞来说,都属于有限状态机),比如越权漏洞,用cookie控制请求状态与机器学习算法识别页面的输出是否有敏感数据(非敏感数据不认为是有效的信息泄漏).
+
   -- 附录 --
 
   [P1.Fuzzing ImageMagick](https://github.com/lcatro/Fuzzing-ImageMagick/blob/master/%E5%A6%82%E4%BD%95%E4%BD%BF%E7%94%A8Fuzzing%E6%8C%96%E6%8E%98ImageMagick%E7%9A%84%E6%BC%8F%E6%B4%9E.md)
@@ -45,17 +47,19 @@
 
   [P4.REX 框架与Auto Exploit Generation 符号执行原理](P4%20REX%20框架与Auto%20Exploit%20Generation%20符号执行原理.md)
 
-  P5.脑图挖洞案例,快速且低成本地从零开始弄懂ThinkPHP框架    ==>  Think代码分析.emmx (使用MindMaster打开,值得一读)
+  P5.脑图挖洞案例,快速且低成本地从零开始弄懂框架与漏洞在框架中的表现形式
 
   脑图预览:
 
+  Think代码分析.emmx (使用MindMaster打开,值得一读)
+
 ![](./picp5/P5.Pic1.png)
 
+  hyper-v vmswitch debug.emmx (使用MindMaster打开,值得一读)
 
+![](./picp5/P5_Vmswitch.png)
 
   -- 快速上手挖洞思路概述 --
 
 ![](./漏洞挖掘思路.png)
-
-
 
